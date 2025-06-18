@@ -11,7 +11,10 @@
 //     }
 //  }
 
-
+//Global Variables
+const playerScore = 0;
+const computerScore = 0;
+//Computer Generatiuon Value
  const computerValue = () => {
     let value = Math.floor(Math.random() * 3) + 1;  // 1…3 inclusive
     if (value == 1) return "Rock";
@@ -19,6 +22,19 @@
     return "Scissors";
  }
 
- 
- let computerChoice = computerValue();
- console.log(computerChoice)
+ console.log(computerValue())
+
+
+
+ const humanChoice = () => {
+    let value =  parseInt(prompt(`Please: make your choice: 
+        1: Rock
+        2: Paper
+        3; Scissors`)); //make sure the input is treated as a number.
+    if ( value == 1 ) return "Rock"
+    if (value == 2) return "paper"
+    return "Scissors"
+
+ }
+
+
