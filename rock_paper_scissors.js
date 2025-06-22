@@ -91,7 +91,7 @@ const updatePlayerScore = () => {
          
          break;
    
-      default: //Scissors
+      case "Scissors":
 
             if (computerValue == "Rock") {
                console.log(`You loose:
